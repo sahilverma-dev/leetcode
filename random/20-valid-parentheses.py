@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/valid-parentheses/description/
+
+
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
@@ -32,3 +35,5 @@ s = Solution()
 print("Example 1:", s.isValid("()"))  # True
 print("Example 2:", s.isValid("()[]{}"))  # True
 print("Example 3:", s.isValid("(]"))  # False
+print("Example 4:", s.isValid("({[]}{()})(){}"))  # True
+print("Example 5:", s.isValid("({[}]{()})(){}"))  # False
